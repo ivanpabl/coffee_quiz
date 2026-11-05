@@ -43,7 +43,7 @@ export default function App() {
           onAnswer={handleAnswer}
         />
       )}
-      {screen === 'result' && <ResultScreen coffeeType={resultType} />}
+      {screen === 'result' && <ResultScreen coffeeType={resultType} onRestart={startQuiz} />}
     </main>
   )
 }

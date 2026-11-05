@@ -2,9 +2,10 @@ import type { CoffeeType } from '../data/coffeeTypes'
 
 type ResultScreenProps = {
   coffeeType: CoffeeType
+  onRestart: () => void
 }
 
-export default function ResultScreen({ coffeeType }: ResultScreenProps) {
+export default function ResultScreen({ coffeeType, onRestart }: ResultScreenProps) {
   return (
     <section className="result">
       <span className="result__emoji" aria-hidden>
@@ -16,6 +17,9 @@ export default function ResultScreen({ coffeeType }: ResultScreenProps) {
         <p className="result__recommendation-label">Напиток для тебя</p>
         <p className="result__recommendation-text">{coffeeType.recommendation}</p>
       </div>
+      <button type="button" className="button button--primary" onClick={onRestart}>
+        Пройти ещё раз
+      </button>
     </section>
   )
 }
