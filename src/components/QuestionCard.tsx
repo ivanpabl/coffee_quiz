@@ -18,6 +18,12 @@ export default function QuestionCard({
       <p className="question__progress">
         Вопрос {questionNumber} из {totalQuestions}
       </p>
+      <div className="question__bar">
+        <span
+          className="question__bar-fill"
+          style={{ width: `${(questionNumber / totalQuestions) * 100}%` }}
+        />
+      </div>
       <h2 className="question__title">{question.question}</h2>
       <div className="question__options">
         {question.options.map((option, index) => (
