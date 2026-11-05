@@ -134,6 +134,46 @@ body {
   transform: scale(0.99);
 }
 
+@media (min-width: 640px) {
+  .question__options {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .option {
+    min-height: 76px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .app {
+    padding: 16px;
+  }
+
+  .question {
+    padding: 24px 18px;
+    border-radius: 18px;
+  }
+
+  .result {
+    padding: 28px 18px;
+    border-radius: 18px;
+  }
+
+  .welcome__steam,
+  .result__emoji {
+    font-size: 44px;
+  }
+}
+
+@media (min-height: 720px) and (min-width: 640px) {
+  .question,
+  .result {
+    padding: 48px;
+  }
+}
+
 .result {
   width: 100%;
   max-width: 520px;
