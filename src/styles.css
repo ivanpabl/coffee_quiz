@@ -24,3 +24,60 @@ body {
   place-items: center;
   padding: 24px;
 }
+
+.welcome {
+  max-width: 520px;
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  gap: 16px;
+}
+
+.welcome__steam {
+  font-size: 56px;
+}
+
+.welcome__title {
+  margin: 0;
+  font-size: clamp(32px, 6vw, 48px);
+  line-height: 1.1;
+}
+
+.welcome__subtitle {
+  margin: 0;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.button {
+  border: none;
+  border-radius: 999px;
+  font: inherit;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.button--primary {
+  margin-top: 8px;
+  padding: 14px 44px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  background: var(--accent);
+}
+
+.button--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(111, 78, 55, 0.35);
+}
+
+.button--primary:active {
+  transform: translateY(0);
+}
+
+.welcome__hint {
+  margin: 0;
+  font-size: 13px;
+  color: var(--muted);
+}
