@@ -1,0 +1,26 @@
+:root {
+  --bg: #f7f3ee;
+  --surface: #ffffff;
+  --ink: #2b2118;
+  --muted: #7a6a58;
+  --accent: #6f4e37;
+  --accent-soft: #e8ddd0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.app {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
