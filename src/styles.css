@@ -133,3 +133,54 @@ body {
 .option:active {
   transform: scale(0.99);
 }
+
+.result {
+  width: 100%;
+  max-width: 520px;
+  text-align: center;
+  background: var(--surface);
+  border-radius: 24px;
+  padding: 40px 32px;
+  box-shadow: 0 10px 30px rgba(43, 33, 24, 0.08);
+  display: grid;
+  justify-items: center;
+  gap: 16px;
+}
+
+.result__emoji {
+  font-size: 56px;
+}
+
+.result__headline {
+  margin: 0;
+  font-size: clamp(26px, 5vw, 36px);
+}
+
+.result__description {
+  margin: 0;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.result__recommendation {
+  width: 100%;
+  background: var(--accent-soft);
+  border-radius: 14px;
+  padding: 16px 20px;
+}
+
+.result__recommendation-label {
+  margin: 0 0 6px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.result__recommendation-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
